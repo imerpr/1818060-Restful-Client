@@ -32,7 +32,6 @@ class Kos extends CI_Controller
 
         }
     }
-
     function edit(){
         if(isset($_POST['submit'])){
             $no_kamar=$this->input->post('no_kamar');
@@ -45,7 +44,7 @@ class Kos extends CI_Controller
             redirect('kos');
         }
         else{
-            $nim=$this->uri->segment(3);
+            $no_kamar=$this->uri->segment(3);
             $data['kos']=json_decode($this->curl->simple_get($this->api.'/no_kamar/'.$no_kamar),true);
             $this->load->view('editkos',$data);
         }

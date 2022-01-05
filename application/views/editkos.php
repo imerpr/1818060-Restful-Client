@@ -5,7 +5,7 @@ echo form_open('kos/edit/');
 <table border='1'>
     <tr>
         <td>no_kamar</td>
-        <td><?php echo form_input('no_kamar',$kos['no_kamar'],"readonly"); ?></td>
+        <td><?php echo form_input('no_kamar',$kos['no_kamar']); ?></td>
     </tr>
     <tr>
         <td>Nama</td>
