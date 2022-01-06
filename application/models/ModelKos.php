@@ -22,7 +22,7 @@ class ModelKos extends CI_Model
     }
 
     public function del_kos($no_kamar){
-        return $this->db->delete('kos', ['kos'=>$no_kamar]);
+		return $this->db->delete('kos', ['no_kamar'=>$no_kamar]);
     }
 }
 
